@@ -11,25 +11,6 @@ $ npm install joi-to-openapi-definition
 
 ## Usage
 
-##  Docs
-```js
-const j2od = require('joi-to-openapi-definition');
-
-//  Returns converted Joi model as json schema
-j2od.convert(joiModel)
-
-//  Add Joi model to OpenAPI Definition
-j2od.add_joi_model(joiModel, 'someKey', yourOpenApiDefinition)
-
-//  Add Joi models to OpenAPI Definition, using object keys as property names
-j2od.add_joi_models(objectOfJoiModels, yourOpenApiDefinition)
-
-//  Copy of openapi-definition package
-//  See https://www.npmjs.com/package/openapi-definition for docs
-j2od.openapi_definition
-
-```
-
 ###  Example
 
 ```js
@@ -134,6 +115,25 @@ console.log(openApiDef);
     }
   }
 }
+```
+
+##  Docs
+```js
+const j2od = require('joi-to-openapi-definition');
+
+//  Returns converted Joi model as json schema
+j2od.convert(joiModel)
+
+//  Add Joi model to OpenAPI Definition
+j2od.add_joi_model(joiModel, 'someKey', yourOpenApiDefinition)
+
+//  Add Joi models to OpenAPI Definition, using object keys as property names
+j2od.add_joi_models(objectOfJoiModels, yourOpenApiDefinition)
+
+//  Copy of openapi-definition package
+//  See https://www.npmjs.com/package/openapi-definition for docs
+j2od.openapi_definition
+
 ```
 
 ## License
