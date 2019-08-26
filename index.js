@@ -25,8 +25,7 @@ const add_joi_models = (joiModelsObject, openApiDef) =>{
 };
 
 module.exports = {
-  convert,
+  convert,   //  Coverts Joi model to JSON schema
   add_joi_model,
   add_joi_models,
-  openapi_definition: openApi
 };

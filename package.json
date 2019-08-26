@@ -1,6 +1,6 @@
 {
   "name": "joi-to-openapi-definition",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add Joi models to openAPI definition, using openapi-definition",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/benrei/joi-to-openapi-definition#readme",
   "dependencies": {
     "joi-to-json-schema": "^5.1.0",
-    "openapi-definition": "0.0.1"
+    "openapi-definition": "0.0.4"
   },
   "devDependencies": {
     "@hapi/joi": "^15.1.1"
