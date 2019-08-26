@@ -19,7 +19,7 @@ const add_joi_model = (joiModel, key, openApiDef) =>{
  */
 const add_joi_models = (joiModelsObject, openApiDef) =>{
   for (const propName in joiModelsObject){
-    const joiSchema = convert(joiModelsObject[propName].validate());
+    const joiSchema = convert(joiModelsObject[propName]);
     openApi.add.components_schema(joiSchema, propName, openApiDef);
   }
 };
