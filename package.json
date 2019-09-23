@@ -30,7 +30,7 @@
   "homepage": "https://github.com/benrei/joi-to-openapi-definition#readme",
   "dependencies": {
     "joi-to-json-schema": "^5.1.0",
-    "openapi-definition": "0.0.4"
+    "openapi-definition": "0.1.0"
   },
   "devDependencies": {
     "@hapi/joi": "^15.1.1"
