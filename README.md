@@ -17,7 +17,7 @@ $ npm install joi-to-openapi-definition
 const Joi = require('@hapi/joi');
 const j2od = require('joi-to-openapi-definition');
 
-let openApiDef = {    //  Your OpenApi definition
+let definition = {    //  Your OpenApi definition
   "openapi": "3.0.0",
   "info": {
     "title": "Sample API",
@@ -46,9 +46,9 @@ const schema = Joi.object().keys({
 }).with('username', 'birthyear').without('password', 'access_token');
 
 //  Add schema to OpenApi definition
-j2od.add_joi_model(schema, 'schema', openApiDef)
+j2od.add_joi_model(definition, 'schema', schema)
 
-console.log(openApiDef);
+console.log(definition);
 ```
 
 #### Output
@@ -125,10 +125,10 @@ const j2od = require('joi-to-openapi-definition');
 j2od.convert(joiModel)
 
 //  Add Joi model to OpenAPI Definition
-j2od.add_joi_model(joiModel, 'someKey', yourOpenApiDefinition)
+j2od.add_joi_model(yourOpenApiDefinition, 'someKey', joiModel)
 
 //  Add Joi models to OpenAPI Definition, using object keys as property names
-j2od.add_joi_models(objectOfJoiModels, yourOpenApiDefinition)
+j2od.add_joi_models(yourOpenApiDefinition, objectOfJoiModels)
 
 //  Copy of openapi-definition package
 //  See https://www.npmjs.com/package/openapi-definition for docs
